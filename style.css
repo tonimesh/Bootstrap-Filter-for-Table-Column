@@ -1,0 +1,61 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.filter-section{
+    display: flex;
+    justify-content: center;
+}
+.filter-section label{
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+p{
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background: red ;
+    transform: skew(25deg);
+    display: block;
+    color: #fff;
+    margin:0px;
+    
+}
+table{
+    overflow:hidden !important;
+}
+th , caption{
+    padding:0px !important;
+    margin:0px !important;
+}
+
+th p{
+    width:100%;
+    translate: -15px 0px;
+    border:2px solid red;
+}
+td{
+    text-align: center;
+    border: 1px solid rgb(158, 6, 6) !important;
+}
+table span{
+    display:  block;
+    margin:  0;
+    text-transform: uppercase;
+    transform:  skew(-25deg);
+}
+.bg-org{
+    background: orange;
+    border-color: orange;
+}
+.bg-blue{
+    background: blue;
+    border-color:blue;
+}
+
+
+
+
+    

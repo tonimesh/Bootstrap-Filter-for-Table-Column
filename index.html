@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>filter | table</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+             <div class="filter-section mt-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="name" checked>
+                    <label class="form-check-label" for="name">Name</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="university" checked>
+                    <label class="form-check-label" for="university">University</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="marks" checked>
+                    <label class="form-check-label" for="marks">Marks</label>
+                  </div>
+               
+             </div>
+            
+
+            <table class="table  table-responsive mt-3">
+                <tr>
+                    <th><p><span>Name</span></p></th>
+                    <th><p class="bg-org"><span>University</span></p></th>
+                    <th><p class="bg-blue"><span>Marks</span></p></th>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>86%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>86%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>86%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>86%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>86%</td>
+                </tr>
+                <tr>
+                    <td>Tonimesh Mondal</td>
+                    <td>KGEC</td>
+                    <td>86%</td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("#name").click(function () { 
+                   $("tr td:nth-child(1), tr th:nth-child(1)").toggleClass("d-none");
+                });
+                $("#university").click(function () { 
+                   $("tr td:nth-child(2), tr th:nth-child(2)").toggleClass("d-none");
+                });
+                $("#marks").click(function () { 
+                   $("tr td:nth-child(3), tr th:nth-child(3)").toggleClass("d-none ");
+                });
+            });
+        </script>
+    </body>
+    </html>
